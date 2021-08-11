@@ -1,12 +1,440 @@
-:root { /* custom properties */
-    --principal: #fdfdfd;
-    --secundario: #212121;
-    --tercero: #11634a;
-    --base: #082529;
-    --fondo:#fafafa;
-    --fuente-principal: 3.8rem;
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
  }
-h1 {
-    background-color: aqua;
-    flex: auto;
+
+ body{
+ background-color: rgb(29, 98, 202);
+ }
+ .navtop{
+     display: flex;
+     width:auto;
+     height: 80px;
+     justify-content: center;
+     background-image: url(https://wallpapercave.com/wp/wp4676582.jpg);
+     background-size: cover;
+     background-color: rgb(29, 98, 202);
+     box-shadow: 5px 5px 50px -19px;
+     border-bottom: outset 2px rgb(29, 98, 202);
+ }
+
+ .imgp{
+     width: 50px;
+     height: 50px;
+     border-radius: 5px;
+     margin-top: 15px;
+     
+ }
+
+ li{
+     float: left;
+ }
+.letra ul{
+    display:block;
+    list-style-type: none;
+    margin-left: 35px;
+    letter-spacing: 1px;
+    padding-left: 2px ;
+    line-height: 75px;
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.letra1{
+    width: auto;
+    margin-left: 18px;
+    text-decoration: none;
+    font-family: 'Otomanopee One', sans-serif;
+    color: aliceblue;
+}
+
+.letra1:hover{
+ color: rgb(202, 204, 207);
+ text-shadow:2px 3px 3px  rgb(8, 8, 8);
+}
+
+.espaciado{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0px 3px 7px 6px rgb(0 0 0 / 81%);
+}
+
+.caja--perfil{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+}
+
+.perfil2{
+    display: flex;
+    max-width: max-content;
+    max-height: max-content;
+    position: relative;
+    border-radius: 50%;
+    border: 2px outset rgb(29, 98, 202);
+    box-shadow: 5px 15px 20px -8px;
+}
+
+.redes{
+    display: flex;
+    position: relative;
+    top: 25%;
+    left: 10%;
+    padding-left: 15px;
+}
+
+.redes a:hover{
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.cajaprincipal{
+    display: flex;
+    width: auto;
+    height: 150px;
+    display: flex;
+    position: relative;
+}
+
+.tituloicom{
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5%;
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.cajaicom{
+    position: relative;
+    padding-top: 3%;
+    width: 50%;
+    margin-top: 15px;
+    bottom: 100px;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content:space-around;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.img--style{
+    border-radius: 5px;
+    box-shadow: 6px 8px 31px 3px;
+}
+.icom1{
+    margin-left: 2%;
+}
+
+.icom2{
+   margin-top: 12%;
+   margin-left: -6%;
+}
+
+.icom3{
+    margin-top: 22%;
+    margin-left: -4%;
+}
+
+.icom4{
+    margin-top: 18%;
+}
+
+.icom5{
+    margin-top: 12%;
+    margin-left: 2%;
+}
+
+.icom6{
+    margin-top: 3%;
+    margin-left: -2%;
+}
+
+.subicom{
+    justify-content: justify;
+    letter-spacing: 1px;
+    color: aliceblue;
+    margin: 0 25% 0 20%;
+    font-size: 12px;
+}
+.caja1{
+    position: relative;
+    left: 50%;
+    width: 50%;
+    bottom: 170px;
+    height: 100%;
+    display: block;
+}
+
+.subprim{
+    display: block;
+    position: absolute;
+    margin: 15% 15px;
+    text-align: center;
+}
+
+.nome{
+    font-size: 25px;
+    font-family: 'Otomanopee One', sans-serif;
+    font: 300;
+    color: aliceblue;
+    -webkit-text-stroke: 0.8px black;
+    letter-spacing: 1px;
+}
+
+.sobrenome{
+    font-size: 25px;
+    font-family: 'Otomanopee One', sans-serif;
+    color: aliceblue;
+    -webkit-text-stroke: 0.8px black;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.especial{
+    font-size: 20px;
+}
+
+.for{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-content: center;
+    text-align: left;
+    padding-left: 30%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 5px 16px 6px rgb(0 0 0 / 81%), 0px -3px 16px 6px rgb(0 0 0 / 81%);
+}
+
+.titulo1{
+    border-left: 2px solid rgb(29, 98, 202);
+    padding-left: 5px;
+    font-size: 25px;
+}
+
+.titulo2{
+    border-left: 2px ridge aliceblue;
+    padding-left: 5px;
+    font-size: 25px;
+}
+.p2{
+
+    border-left: 2px ridge rgb(29, 98, 202);
+    padding-left: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.expe .p2 {
+    border-left: 2px ridge aliceblue;
+}
+
+.expe{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    text-align: left;
+    padding-left: 30%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.projeto{
+    width: 100%;
+    height: 400px;
+    display: block;
+    position: relative;
+    background-color: aliceblue;
+    align-content: center;
+    text-align: left;
+    padding: 25px 20% 25px 20%;
+    box-shadow: 0px 5px 16px 6px rgb(0 0 0 / 81%), 0px -2px 16px 6px rgb(0 0 0 / 81%);
+}
+
+.tituloprojeto{
+    display: flex;
+    border-left: 2px ridge rgb(29, 98, 202);
+    padding-left: 5px;
+    font-size: 25px;
+    margin-left: 17%;
+    text-transform: capitalize;
+}
+
+.caixa--principal--projeto{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    left: auto;
+}
+
+.caixa1p{
+    display: block;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 10px 5px 5px 5px;
+    margin: 20px 30px;
+    box-shadow: inset 0 0 8px -2px rgb(29, 98, 202),
+    5px 4px 9px -1px;
+}
+
+.caixa1p:hover{
+    box-shadow: 6px 4px 2em rgb(29, 98, 202);
+}
+
+.caixa2p{
+    display: block;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 10px 5px 5px 5px;
+    margin: 20px 30px;
+    box-shadow: inset 0 0 8px -2px rgb(29, 98, 202),
+    5px 4px 9px -1px;
+}
+.caixa2p:hover{
+    box-shadow: 6px 4px 2em rgb(29, 98, 202);
+}
+
+.caixa3p{
+    display: block;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 10px 5px 5px 5px;
+    margin: 20px 30px;
+    box-shadow: inset 0 0 8px -2px rgb(29, 98, 202),
+    5px 4px 9px -1px;
+}
+.caixa3p:hover{
+    box-shadow: 6px 4px 2em rgb(29, 98, 202);
+}
+
+.protitle{
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.paragrafopro{
+    text-align: justify;
+    margin: 0 15px 10px 15px;
+    padding-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.boton{
+    padding: 5px;
+    margin: 3px 2px 3px 2px;
+    background-color: rgb(29, 98, 202);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.caixageneral{
+    width: 60%;
+    height: 100%;
+    margin: 30px 20% 20px 20%;
+    padding: 10px 0px;
+    box-shadow: 0px 0px 30px 1px #000000;
+    border-radius: 5px;
+}
+
+.caixacontato{
+    display: block;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    margin:10px 20% 15px 20%;
+}
+
+.caixacontato h2{
+    color: rgb(17, 17, 17);
+}
+
+.caixacontato p{
+    color: rgb(10, 10, 10);
+    text-transform:capitalize;
+    padding-top: 3px;
+    letter-spacing: 1.5;
+}
+
+.caixaform{
+    display: block;
+}
+
+.caixaform{
+    display: block;
+    width: auto;
+    height: 100%;
+    margin:10px 20% 15px 20%;
+}
+
+.caixaform label{
+    display: block;
+    margin: 2px auto;
+    padding: 2px;
+    font-weight: 600;
+}
+
+.caixaform input{
+    display: inline-block;
+    width: max-content;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 4px;
+    border: none;
+}
+
+.caixaform textarea{
+    overflow: scroll;
+    resize: none;
+    border-radius: 6px;
+}
+
+.caixaform button{
+    background-color: aliceblue;
+    color: black;
+    font-weight: 700;
+    width: max-content;
+    height: max-content;
+    padding: 5px 15px;
+    border: 0px;
+    border-radius: 4px;
+}
+
+button:hover{
+    width: min-content;
+    height: min-content;
+    padding: 5px 15px;
+    background-color: rgb(29, 98, 202);
+    border: 2px solid aliceblue;
+    color:aliceblue;
+}
+
+footer{
+    width: auto;
+    height: 25px;
+    margin: 15px 40%;
+    text-transform: capitalize;
 }
