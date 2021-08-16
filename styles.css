@@ -109,7 +109,6 @@
     margin-bottom: 5%;
     color: aliceblue;
     letter-spacing: 1px;
-    font-family: 'Otomanopee One', sans-serif;
 }
 
 .cajaicom{
@@ -127,10 +126,6 @@
     letter-spacing: 3px;
 }
 
-.img--style{
-    border-radius: 5px;
-    box-shadow: 6px 8px 31px 3px;
-}
 .icom1{
     margin-left: 2%;
 }
@@ -160,12 +155,17 @@
 }
 
 .subicom{
-    justify-content: justify;
+    display: flex;
+    justify-content: space-around;
     letter-spacing: 1px;
     color: aliceblue;
-    margin: 0 25% 0 20%;
-    font-size: 12px;
+    font-size: 13px;
 }
+
+.subicom :hover{
+    color: #000000;
+}
+
 .caja1{
     position: relative;
     left: 50%;
@@ -184,24 +184,22 @@
 
 .nome{
     font-size: 25px;
-    font-family: 'Otomanopee One', sans-serif;
     font: 300;
     color: aliceblue;
-    -webkit-text-stroke: 0.8px black;
     letter-spacing: 1px;
 }
 
 .sobrenome{
     font-size: 25px;
-    font-family: 'Otomanopee One', sans-serif;
     color: aliceblue;
-    -webkit-text-stroke: 0.8px black;
     letter-spacing: 1px;
     margin-bottom: 5px;
 }
 
 .especial{
     font-size: 20px;
+    width: 500px;
+    margin: 15px 75px;
 }
 
 .for{

@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     <title>Portaforio</title>
 </head>
 
@@ -54,12 +53,12 @@
         <section >
         <div class="cajaprincipal"><h2 class="tituloicom">Minhas linguagens de programação</h2></div>
             <div class="cajaicom">
-                <span class="icom1"><img class="img--style" src="https://img.icons8.com/color-glass/200/000000/html.png"/><p class="subicom">html</p></span>
-                <span class="icom2"><img class="img--style" src="https://img.icons8.com/color-glass/60/000000/css.png"/><p class="subicom">css</p></span>
-                <span class="icom3"><img class="img--style" src="https://img.icons8.com/color/60/000000/bootstrap.png"/><P class="subicom">bootstrap</P></span>
-                <span class="icom4"><img class="img--style" src="https://img.icons8.com/color/60/000000/javascript--v2.png"/><p class="subicom">javascript</p></span>
-                <span class="icom5"><img class="img--style" src="https://img.icons8.com/color/60/000000/typescript.png"/><p class="subicom">typescript</p></span>
-                <span class="icom6"><img class="img--style" src="https://img.icons8.com/color/60/000000/react-native.png"/><p class="subicom">react</p></span>
+                <span class="icom1"><img  src="https://img.icons8.com/color-glass/100/000000/html.png"/><p class="subicom">html</p></span>
+                <span class="icom2"><img  src="https://img.icons8.com/color-glass/80/000000/css.png"/><p class="subicom">css</p></span>
+                <span class="icom3"><img  src="https://img.icons8.com/color/70/000000/bootstrap.png"/><P class="subicom">bootstrap</P></span>
+                <span class="icom4"><img  src="https://img.icons8.com/color/75/000000/javascript--v2.png"/><p class="subicom">javascript</p></span>
+                <span class="icom5"><img  src="https://img.icons8.com/color/80/000000/typescript.png"/><p class="subicom">typescript</p></span>
+                <span class="icom6"><img  src="https://img.icons8.com/color/95/000000/react-native.png"/><p class="subicom">react</p></span>
             </div>
             </div>
             <nav class="caja1">
@@ -158,7 +157,7 @@
             <div name="comunicacion" class="caixaform">
                 <form action="#">
                     <label>Nome:
-                    <input type="text" id="email" nome="nome" placeholder="Preencha seu nome" required>
+                    <input type="text" id="text" nome="nome" placeholder="Preencha seu nome" required>
                     </label>
                     <label>Email:
                     <input type="email" id="email" nome="email" placeholder="Preencha seu email" required>
@@ -169,13 +168,14 @@
                     <label>
                         <textarea rows="10" cols="70" name="comentario"></textarea>
                     </label>
-                    <button>Enviar</button>
+                    <button type="submit" onclick="enviar" diseable>Enviar</button>
 
                 </form>
             </div>
         </section>
     </main>
 </body>
+<script src="main.js"></script>
 <footer>
     <p>&copy; direitos reservados pelo <img src="./img/generatedtext.png"></p>
 </footer>
