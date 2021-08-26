@@ -109,6 +109,7 @@
     margin-bottom: 5%;
     color: aliceblue;
     letter-spacing: 1px;
+    text-transform: capitalize;
 }
 
 .cajaicom{
@@ -209,20 +210,21 @@
     display: flex;
     align-content: center;
     text-align: left;
-    padding-left: 30%;
     padding-top: 15px;
     padding-bottom: 15px;
     box-shadow: 0px 5px 16px 6px rgb(0 0 0 / 81%), 0px -3px 16px 6px rgb(0 0 0 / 81%);
 }
 
+article{
+    margin: 50px auto;
+}
+
 .titulo1{
-    border-left: 2px solid rgb(29, 98, 202);
     padding-left: 5px;
     font-size: 25px;
 }
 
 .titulo2{
-    border-left: 2px ridge aliceblue;
     padding-left: 5px;
     font-size: 25px;
 }
@@ -244,7 +246,6 @@
     display: flex;
     align-content: center;
     text-align: left;
-    padding-left: 30%;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -285,7 +286,7 @@
     text-align: center;
     padding: 10px 5px 5px 5px;
     margin: 20px 30px;
-    box-shadow: inset 0 0 8px -2px rgb(29, 98, 202),
+    box-shadow: inset 0 8px 0.1px rgb(29, 98, 202),
     5px 4px 9px -1px;
 }
 
@@ -301,7 +302,7 @@
     text-align: center;
     padding: 10px 5px 5px 5px;
     margin: 20px 30px;
-    box-shadow: inset 0 0 8px -2px rgb(29, 98, 202),
+    box-shadow: inset 0 8px 0.1px rgb(29, 98, 202),
     5px 4px 9px -1px;
 }
 .caixa2p:hover{
@@ -316,7 +317,7 @@
     text-align: center;
     padding: 10px 5px 5px 5px;
     margin: 20px 30px;
-    box-shadow: inset 0 0 8px -2px rgb(29, 98, 202),
+    box-shadow: inset 0 8px 0.1px rgb(29, 98, 202),
     5px 4px 9px -1px;
 }
 .caixa3p:hover{
@@ -347,12 +348,13 @@ a{
     background-color: rgb(29, 98, 202);
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    margin-top: 12px;
 }
 
 .caixageneral{
     width: 60%;
     height: 100%;
-    margin: 30px 20% 20px 20%;
+    margin: 80px 20% 20px 20%;
     padding: 10px 0px;
     box-shadow: 0px 0px 30px 1px #000000;
     border-radius: 5px;
