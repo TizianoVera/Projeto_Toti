@@ -264,7 +264,6 @@ article{
 
 .tituloprojeto{
     display: flex;
-    border-left: 2px ridge rgb(29, 98, 202);
     padding-left: 5px;
     font-size: 25px;
     margin-left: 17%;
