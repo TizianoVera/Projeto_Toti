@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     <link rel="icon" href="https://img.icons8.com/color/48/000000/world-map-continents.png">
-    <title>Miportal&#176;TZ&#8240;</title>
+    <title>Miportal&#176;TV&#8240;</title>
 </head>
 
 <body>
@@ -56,22 +56,19 @@
                 <h2 class="tituloicom">Em treinamento</h2>
             </div>
             <div class="cajaicom">
-                <span class="icom1"><img src="https://img.icons8.com/color-glass/100/000000/html.png" />
-                    <p class="subicom">html</p>
+                <span class="icom1"><img src="./img/html.svg" width="100" height="100"/>
                 </span>
-                <span class="icom2"><img src="https://img.icons8.com/color-glass/80/000000/css.png" />
-                    <p class="subicom">css</p>
+                <span class="icom2"><img src="./img/css.svg" height="100" width="100"/>
                 </span>
-                <span class="icom3"><img src="https://img.icons8.com/color/70/000000/bootstrap.png" />
-                    <P class="subicom">bootstrap</P>
+                <span class="icom3"><img src="./img/javascript.svg" height="100" width="100"/>
                 </span>
-                <span class="icom4"><img src="https://img.icons8.com/color/75/000000/javascript--v2.png" />
-                    <p class="subicom">javascript</p>
+                <span class="icom4"><img src="./img/bootstrap.svg" height="88" width="88" />
+                    <p class="subicom">bootstrap</p>
                 </span>
-                <span class="icom5"><img src="https://img.icons8.com/color/80/000000/typescript.png" />
+                <span class="icom5"><img src="./img/typescript.svg" height="100" width="100"/>
                     <p class="subicom">typescript</p>
                 </span>
-                <span class="icom6"><img src="https://img.icons8.com/color/95/000000/react-native.png" />
+                <span class="icom6"><img src="./img/react.svg" height="100" width="100"/>
                     <p class="subicom">react</p>
                 </span>
             </div>
@@ -141,7 +138,7 @@
                         earum architecto dignissimos. Ab, dolores odit.
                     </p>
                     <button class="boton"><a href="#">Repositorio</a></button>
-                    <button class="boton"><a href="#">Ver demo</a></button>
+                    <button class="boton"><a href="#">Demo</a></button>
                 </span>
 
 
@@ -153,7 +150,7 @@
                         earum architecto dignissimos. Ab, dolores odit.
                     </p>
                     <button class="boton"><a href="#">Repositorio</a></button>
-                    <button class="boton"><a href="#">Ver demo</a></button>
+                    <button class="boton"><a href="#">Demo</a></button>
                 </span>
 
                 <span class="caixa3p">
@@ -165,7 +162,7 @@
                     </p>
                     <div>
                         <button class="boton"><a href="#">Repositorio</a></button>
-                        <button class="boton"><a href="#">Ver demo</a></button>
+                        <button class="boton"><a href="#">Demo</a></button>
                     </div>
                 </span>
             </div>
@@ -180,27 +177,38 @@
             </div>
 
             <div name="comunicacion" class="caixaform">
-                <form action="#" method="POST" >
-                    <label>Nome:
-                        <input type="text" id="text" nome="nome" placeholder="Preencha seu nome" required>
+                <form action="#" id="form" method="POST"  onsubmit="return validar()">
+                    <label for="nome">Nome:
+                        <input type="text" id="nome" nome="nome" placeholder="Preencha seu nome" required>
+                        <i class="fas fa-check-list-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
                     </label>
+                    <label for="telefone">Telefone:
+                        <input type="tel" id="Telefone" nome="Telefone" placeholder="Preencha seu numero" required>
+                        <i class="fas fa-check-list-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </label for="email">
                     <label>Email:
                         <input type="email" id="email" nome="email" placeholder="Preencha seu email" required>
+                        <i class="fas fa-check-list-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
                     </label>
                     <label>Asunto:
-                        <input type="text" placeholder="Preencha">
+                        <input type="text" placeholder="Preencha" id="asunto">
                     </label>
                     <label>
-                        <textarea rows="10" cols="70" name="comentario"></textarea>
+                        <textarea id="mensaje" rows="10" cols="70" name="comentario"></textarea>
                     </label>
-                    <button type="submit" onclick="enviar" diseabled>Enviar</button>
-
+                    <button type="submit" onclick="enviar">Enviar</button>
                 </form>
             </div>
         </section>
     </main>
 </body>
-<script src="main.js"></script>
+<script src="validacion.js"></script>
 <footer>
     <p>&copy; direitos reservados pelo <img src="./img/generatedtext.png" alt="tizianovera" width="250" height="100">
     </p>
