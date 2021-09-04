@@ -40,6 +40,12 @@
                             <img src="https://img.icons8.com/ios-filled/40/000000/linkedin-circled--v3.png" />
                         </a>
                     </span>
+
+                    <span class="redes">
+                        <a href="https://api.whatsapp.com/send?phone=<5511956507829&text=Hola!%20Gracias%20por%20contactarme!%20Tiziano%20Vera" target="_BLANK">
+                            <img src="https://img.icons8.com/ios-filled/40/000000/whatsapp.png"/>
+                        </a>
+                    </span>
                 </div>
             </div>
         </nav>
@@ -75,7 +81,7 @@
             </div>
             <nav class="caja1">
                 <article class="subprim">
-                    <h1 nome="nombre" class="nome">TIZIANO VERA</h1>
+                    <h1 class="nome"><a name="nombre" >TIZIANO VERA</a></h1>
                     <h2 class="sobrenome">Desenvolvedor web</h2>
                     <p class="especial">
                         Quando criança, sonhava em ser músico. Sempre quis criar, mas às vezes minha mente vai além do
@@ -94,9 +100,9 @@
             </div>
         </section>
 
-        <section class="form">
+        <section class="formacion">
             <article>
-                <h2 nome="formacion" class="titulo1">Formação</h2>
+                <h2 class="titulo1"><a name="formacion">Formação</a></h2>
                 <br>
                 <data class="p2">2011-2014</data>
                 <p class="p2">técnico em relações industriais</p>
@@ -116,7 +122,7 @@
         </section>
         <section class="expe">
             <article>
-                <h2 nome="experiencia" class="titulo2">Experiencia</h2>
+                <h2 class="titulo2"><a name="experiencia"></a>Experiencia</h2>
                 <br>
                 <data class="p2"><b>2013-2018</b></data>
                 <p class="p2">operador de proteccion insdustrial</p>
@@ -126,7 +132,7 @@
         <section class="projeto">
 
             <div>
-                <h2 name="projecto" class="tituloprojeto">Projetos</h2>
+                <h2 class="tituloprojeto"><a name="projecto">Projetos</a></h2>
             </div>
 
             <div class="caixa--principal--projeto">
@@ -137,8 +143,8 @@
                         alias rem temporibus dolor magnam voluptas tempora aliquid similique pariatur distinctio
                         earum architecto dignissimos. Ab, dolores odit.
                     </p>
-                    <button class="boton"><a href="#">Repositorio</a></button>
-                    <button class="boton"><a href="#">Demo</a></button>
+                    <button class="boton-projeto" class="boton"><a href="#">Repositorio</a></button>
+                    <button class="boton-projeto" class="boton"><a href="#">Demo</a></button>
                 </span>
 
 
@@ -149,8 +155,8 @@
                         alias rem temporibus dolor magnam voluptas tempora aliquid similique pariatur distinctio
                         earum architecto dignissimos. Ab, dolores odit.
                     </p>
-                    <button class="boton"><a href="#">Repositorio</a></button>
-                    <button class="boton"><a href="#">Demo</a></button>
+                    <button class="boton-projeto" class="boton"><a href="#">Repositorio</a></button>
+                    <button class="boton-projeto" class="boton"><a href="#">Demo</a></button>
                 </span>
 
                 <span class="caixa3p">
@@ -161,8 +167,8 @@
                         earum architecto dignissimos. Ab, dolores odit.
                     </p>
                     <div>
-                        <button class="boton"><a href="#">Repositorio</a></button>
-                        <button class="boton"><a href="#">Demo</a></button>
+                        <button class="boton-projeto" class="boton"><a href="#">Repositorio</a></button>
+                        <button class="boton-projeto" class="boton"><a href="#">Demo</a></button>
                     </div>
                 </span>
             </div>
@@ -171,40 +177,42 @@
 
         <section class="caixageneral">
             <div class="caixacontato">
-                <h2>Contato</h2>
+                <h2><a name="comunicacion">Contato</a></h2>
                 <p>Se você gostou do meu trabalho e deseja entrar em contato comigo. ou se você só precisa me dar uma
                     sugestão! Receberei suas recomendações com prazer!</p>
             </div>
 
             <div name="comunicacion" class="caixaform">
-                <form action="#" id="form" method="POST"  onsubmit="return validar()">
-                    <label for="nome">Nome:
-                        <input type="text" id="nome" nome="nome" placeholder="Preencha seu nome" required>
-                        <i class="fas fa-check-list-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </label>
-                    <label for="telefone">Telefone:
-                        <input type="tel" id="Telefone" nome="Telefone" placeholder="Preencha seu numero" required>
-                        <i class="fas fa-check-list-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </label for="email">
-                    <label>Email:
-                        <input type="email" id="email" nome="email" placeholder="Preencha seu email" required>
-                        <i class="fas fa-check-list-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </label>
-                    <label>Asunto:
-                        <input type="text" placeholder="Preencha" id="asunto">
-                    </label>
-                    <label>
-                        <textarea id="mensaje" rows="10" cols="70" name="comentario"></textarea>
-                    </label>
-                    <button type="submit" onclick="enviar">Enviar</button>
+                <form action="#" id="form" method="GET" >
+
+                    <div class="formControl" >
+                        <label for="nome">Nome:
+                            <input type="text" id="nome" name="nome" placeholder=" Preencha seu nome">
+                        </label>
+
+                     </div>
+
+                    <div class="formControl" >
+                        <label for="telefone" id="telefone">Telefone:
+                            <input type="tel" id="Telefone" name="Telefone" placeholder=" xx-xxxxx-xxxx">
+                        </label>
+                    </div>
+
+                    <div class="formControl">
+                        <label for="email" id="email">Email:
+                            <input type="email" id="email" name="email" placeholder=" xxxxxxx@xxx.xxx" >
+                        </label>
+                    </div>
+                
+                    <span class="formControl" for="asunto" id="asunto">
+                        <label for="mensaje">Asunto:
+                            <textarea id="mensaje" rows="10" cols="70" name="comentario"></textarea>
+                        </label>
+                    </span>
+                    <button id="boton" type="submit">Enviar</button>
                 </form>
             </div>
+            
         </section>
     </main>
 </body>

@@ -209,7 +209,7 @@
     margin: 15px 75px;
 }
 
-.form{
+.formacion{
     width: 100%;
     height: 100%;
     background-color: aliceblue;
@@ -289,7 +289,7 @@ article{
     width: auto;
     height: auto;
     text-align: center;
-    padding: 10px 5px 5px 5px;
+    padding: 10px 5px 5px;
     margin: 20px 30px;
     box-shadow: inset 0 8px 0.1px rgb(29, 98, 202),
     5px 4px 9px -1px;
@@ -305,7 +305,7 @@ article{
     width: auto;
     height: auto;
     text-align: center;
-    padding: 10px 5px 5px 5px;
+    padding: 10px 5px 5px;
     margin: 20px 30px;
     box-shadow: inset 0 8px 0.1px rgb(29, 98, 202),
     5px 4px 9px -1px;
@@ -320,7 +320,7 @@ article{
     width: auto;
     height: auto;
     text-align: center;
-    padding: 10px 5px 5px 5px;
+    padding: 10px 5px 5px;
     margin: 20px 30px;
     box-shadow: inset 0 8px 0.1px rgb(29, 98, 202),
     5px 4px 9px -1px;
@@ -330,20 +330,31 @@ article{
 }
 
 .protitle{
-    text-align: left;
-    margin-left: 15px;
-    margin-bottom: 15px;
+    margin: 10px;
     text-transform: uppercase;
 }
 
 .paragrafopro{
     text-align: justify;
-    margin: 0 15px 10px 15px;
+    margin: 0 10px 2px 10px;
     padding-bottom: 5px;
 }
 
 a{
     text-decoration: none;
+}
+
+.boton-projeto{
+    padding: 7px;
+    margin: 10px 2px 3px 2px;
+    background-color: rgb(29, 98, 202);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 15px;
+    border: none;
+}
+
+.boton-projeto a{
     color: aliceblue;
 }
 
@@ -387,10 +398,6 @@ a{
 
 .caixaform{
     display: block;
-}
-
-.caixaform{
-    display: block;
     width: auto;
     height: 100%;
     margin:10px 20% 15px 20%;
@@ -398,35 +405,15 @@ a{
 
 .caixaform label{
     display: inline-grid;
-    margin: 2px auto;
+    margin: 5px auto;
     padding: 2px;
     font-weight: 600;
 }
 
-.caixaform input{
-    display: inline-block;
-    width: max-content;
+.caixaform div{
+    display: table-cell;
     padding: 2px;
-    margin: 2px;
-    border-radius: 4px;
-    border: none;
-    margin-top: 5px;
-}
-
-small{
-    visibility:hidden;
-    padding: 2px;
-    color: rgb(187, 41, 41);
-}
-
-label i.fa-check-list-circle{
-    color: steelblue;
-    visibility: visible;
-}
-
-label i.fa-exclamation-circle{
-    color: rgb(187, 41, 41);
-    visibility: visible;
+    margin-bottom: -14px;
 }
 
 .caixaform textarea{
