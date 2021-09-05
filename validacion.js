@@ -6,10 +6,10 @@ form.addEventListener('submit', e =>{
     let formData = new formData(form);
         
                const contato = {
-            nome: formData.get('nome').value.trim(),
-            telefone: formData.get('telefone').value.trim(),
-            email: formData.get('email').value.trim(),
-            mensaje: formData.get('mensaje').value.trim()
+            nome: formData.post('nome').value.trim(),
+            telefone: formData.post('telefone').value.trim(),
+            email: formData.post('email').value.trim(),
+            mensaje: formData.post('mensaje').value.trim()
     };
      
     formData.push(contato);
@@ -17,19 +17,19 @@ form.addEventListener('submit', e =>{
 
 let erros = [];
 
-if (!validarCampo(contato.nome)) {
+if (!validarCampo(nome)) {
     erros.push("O nome é obrigatorio");
 } else { 
     alert('ingreso obrigatorio')
 }
 
-if (!validarTelefone(contato.telefone)) {
+if (!validarTelefone(telefone)) {
     erros.push("O telefone é obrigatorio")
 } else{
     alert('ingreso obrigatorio')
 }
 
-if (!validarEmail(contato.email)) {
+if (!validarEmail(email)) {
     erros.push("O email é obrigatorio")
 } else{
     alert('ingreso obrigatorio')
