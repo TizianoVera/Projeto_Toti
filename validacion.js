@@ -20,19 +20,19 @@ let erros = [];
 if (!validarCampo(nome)) {
     erros.push("O nome é obrigatorio");
 } else { 
-    alert('ingreso obrigatorio')
+    'ingreso obrigatorio')
 }
 
 if (!validarTelefone(telefone)) {
     erros.push("O telefone é obrigatorio")
 } else{
-    alert('ingreso obrigatorio')
+    'ingreso obrigatorio')
 }
 
 if (!validarEmail(email)) {
     erros.push("O email é obrigatorio")
 } else{
-    alert('ingreso obrigatorio')
+    'ingreso obrigatorio')
 }
 
 

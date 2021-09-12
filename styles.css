@@ -90,7 +90,7 @@
 }
 
 .redes a:hover{
-    background-color: aliceblue;
+    background-color: black;
     border-radius: 50%;
 }
 .cajaprincipal{
@@ -145,6 +145,10 @@
     margin-top: 18%;
 }
 
+.icom4 p{
+    margin-left: 5px;
+}
+
 .icom5{
     margin-top: 12%;
     margin-left: 2%;
@@ -152,6 +156,10 @@
     height: 100px;
     width: 100px;
     overflow: hidden;
+}
+
+.icom5 p{
+    margin-left: 12px;
 }
 
 .icom6{
@@ -162,15 +170,17 @@
     overflow: hidden;
 }
 
+.icom6 p{
+    margin-left: 30px;
+}
+
 .subicom{
     display: flex;
     position: absolute;
     letter-spacing: 1px;
-    color: black;
+    color: white;
     font-size: 15px;
     font-weight: 900;
-    text-shadow: 4px 1px 4px rgba(0,0,0,0.65), 4px 1px 4px rgba(0,0,0,0.65);
-
 }
 
 .caja1{
@@ -204,9 +214,11 @@
 }
 
 .especial{
-    font-size: 20px;
+    font-size: 18px;
     width: 500px;
     margin: 15px 75px;
+    color: white;
+    letter-spacing: 2px;
 }
 
 .formacion{

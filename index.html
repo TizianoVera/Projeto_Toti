@@ -29,21 +29,22 @@
                 <div class="redes">
                     <span class="redes">
                         <a href="https://www.facebook.com/tiziano.vera21" target="_BLANK">
-                            <img src="https://img.icons8.com/ios-filled/40/000000/facebook-circled--v1.png" /></a>
+                            <img src="https://img.icons8.com/ios-filled/40/FFFFFF/facebook-circled--v1.png" />
+                        </a>
                     </span>
                     <span class="redes">
                         <a href="https://github.com/TizianoVera" target="_BLANK">
-                            <img src="https://img.icons8.com/ios-filled/40/000000/github.png" /></a>
+                            <img src="https://img.icons8.com/ios-filled/40/FFFFFF/github.png" /></a>
                     </span>
                     <span class="redes">
                         <a href="https://www.linkedin.com/in/tiziano-vera-183834212/" target="_BLANK">
-                            <img src="https://img.icons8.com/ios-filled/40/000000/linkedin-circled--v3.png" />
+                            <img src="https://img.icons8.com/ios-filled/40/FFFFFF/linkedin-circled--v3.png" />
                         </a>
                     </span>
 
                     <span class="redes">
                         <a href="https://api.whatsapp.com/send?phone=<5511956507829&text=Hola!%20Gracias%20por%20contactarme!%20Tiziano%20Vera" target="_BLANK">
-                            <img src="https://img.icons8.com/ios-filled/40/000000/whatsapp.png"/>
+                            <img src="https://img.icons8.com/ios-filled/40/FFFFFF/whatsapp.png"/>
                         </a>
                     </span>
                 </div>
@@ -187,21 +188,23 @@
 
                     <div class="formControl" >
                         <label for="nome">Nome:
-                            <input type="text" id="nome" name="nome" placeholder=" Preencha seu nome">
+                            <input type="text" id="nome" name="nome" placeholder=" Preencha seu nome"required>
                         </label>
-
+                        <span id="error" id="active"></span>
                      </div>
 
                     <div class="formControl" >
                         <label for="telefone" id="telefone">Telefone:
-                            <input type="tel" id="Telefone" name="Telefone" placeholder=" xx-xxxxx-xxxx">
+                            <input type="tel" id="Telefone" name="Telefone" placeholder=" xx-xxxxx-xxxx" required>
                         </label>
+                        <span id="error" id="active"></span>
                     </div>
 
                     <div class="formControl">
                         <label for="email" id="email">Email:
-                            <input type="email" id="email" name="email" placeholder=" xxxxxxx@xxx.xxx" >
+                            <input type="email" id="email" name="email" placeholder=" xxxxxxx@xxx.xxx" required>
                         </label>
+                        <span id="error" id="active"></span>
                     </div>
                 
                     <span class="formControl" for="asunto" id="asunto">
@@ -216,7 +219,7 @@
         </section>
     </main>
 </body>
-<script src="validacion.js"></script>
+<!-- <script src="validacion.js"></script> -->
 <footer>
     <p>&copy; direitos reservados pelo <img src="./img/generatedtext.png" alt="tizianovera" width="250" height="100">
     </p>
