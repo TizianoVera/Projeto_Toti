@@ -7,7 +7,7 @@
  }
 
  body{
- background-color: rgb(29, 98, 202);
+ background-color: #1D67D0;
  }
  .navtop{
      display: flex;
@@ -107,7 +107,7 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 5%;
-    color: aliceblue;
+    color: rgb(202, 204, 207);
     letter-spacing: 1px;
     text-transform: capitalize;
 }
@@ -178,7 +178,7 @@
     display: flex;
     position: absolute;
     letter-spacing: 1px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 15px;
     font-weight: 900;
 }
@@ -214,10 +214,10 @@
 }
 
 .especial{
-    font-size: 18px;
+    font-size: 19px;
     width: 500px;
     margin: 15px 75px;
-    color: white;
+    color: rgb(230, 230, 230);
     letter-spacing: 2px;
 }
 
