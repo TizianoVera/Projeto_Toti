@@ -7,18 +7,20 @@
  }
 
  body{
- background-color: #1D67D0;
+    box-sizing: border-box;
+    background-color: #3498DB;
  }
  .navtop{
      display: flex;
      width:auto;
-     height: 80px;
+     height: 5rem;
      justify-content: center;
      background-image: url(https://wallpapercave.com/wp/wp4676582.jpg);
      background-size: cover;
-     background-color: rgb(29, 98, 202);
+     background-color: #3498DB;
      box-shadow: 5px 5px 50px -19px;
-     border-bottom: outset 2px rgb(29, 98, 202);
+     border-bottom: outset 2px #3498DB;
+     box-sizing: content-box;
  }
 
  .imgp{
@@ -50,7 +52,7 @@
     margin-left: 18px;
     text-decoration: none;
     font-family: 'Otomanopee One', sans-serif;
-    color: aliceblue;
+    color: #fff;
 }
 
 .letra1:hover{
@@ -99,6 +101,7 @@
     height: 150px;
     display: flex;
     position: relative;
+    box-sizing: border-box;
 }
 
 .tituloicom{
@@ -110,12 +113,13 @@
     color: rgb(202, 204, 207);
     letter-spacing: 1px;
     text-transform: capitalize;
+    box-sizing: border-box;
 }
 
 .cajaicom{
     position: relative;
     padding-top: 3%;
-    width: 50%;
+    width: 52%;
     margin-top: 15px;
     bottom: 100px;
     height: 100%;
@@ -123,12 +127,11 @@
     display: flex;
     justify-content:space-between;
     text-transform: capitalize;
-    font-weight: 700;
-    letter-spacing: 3px;
+    box-sizing: border-box;
 }
 
 .icom1{
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 .icom2{
@@ -195,7 +198,7 @@
 .subprim{
     display: block;
     position: absolute;
-    margin: 15% 15px;
+    margin: 15% 50px;
     text-align: center;
 }
 
@@ -269,8 +272,7 @@ article{
 }
 
 .projeto{
-    width: 100%;
-    height: 400px;
+    box-sizing: content-box;
     display: block;
     position: relative;
     background-color: aliceblue;
@@ -291,7 +293,6 @@ article{
 .caixa--principal--projeto{
     display: flex;
     width: 100%;
-    height: 80%;
     left: auto;
 }
 
@@ -299,11 +300,11 @@ article{
     display: block;
     border-radius: 5px;
     width: auto;
-    height: auto;
+    height: 20rem;
     text-align: center;
     padding: 10px 5px 5px;
     margin: 20px 30px;
-    box-shadow: inset 0 8px 0.1px rgb(29, 98, 202),
+    box-shadow: inset 0 8px 0.1px #3498DB,
     5px 4px 9px -1px;
 }
 
@@ -315,11 +316,11 @@ article{
     display: block;
     border-radius: 5px;
     width: auto;
-    height: auto;
+    height: 20rem;
     text-align: center;
     padding: 10px 5px 5px;
     margin: 20px 30px;
-    box-shadow: inset 0 8px 0.1px rgb(29, 98, 202),
+    box-shadow: inset 0 8px 0.1px #3498DB,
     5px 4px 9px -1px;
 }
 .caixa2p:hover{
@@ -330,11 +331,11 @@ article{
     display: block;
     border-radius: 5px;
     width: auto;
-    height: auto;
+    height: 20rem;
     text-align: center;
     padding: 10px 5px 5px;
     margin: 20px 30px;
-    box-shadow: inset 0 8px 0.1px rgb(29, 98, 202),
+    box-shadow: inset 0 8px 0.1px #3498DB,
     5px 4px 9px -1px;
 }
 .caixa3p:hover{
@@ -358,12 +359,12 @@ a{
 
 .boton-projeto{
     padding: 7px;
-    margin: 10px 2px 3px 2px;
-    background-color: rgb(29, 98, 202);
+    background-color: #3498DB;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-top: 15px;
     border: none;
+    box-sizing: content-box;
 }
 
 .boton-projeto a{
@@ -373,7 +374,7 @@ a{
 .boton{
     padding: 5px;
     margin: 10px 2px 3px 2px;
-    background-color: rgb(29, 98, 202);
+    background-color: #3498DB;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-top: 12px;
@@ -420,7 +421,14 @@ a{
     margin: 5px auto;
     padding: 2px;
     font-weight: 600;
+    
 }
+
+.caixaform input{
+    outline: 0;
+}
+
+
 
 .caixaform div{
     display: table-cell;
@@ -432,6 +440,7 @@ a{
     overflow: scroll;
     resize: none;
     border-radius: 6px;
+    outline: 0;
 }
 
 .caixaform button{
@@ -442,16 +451,16 @@ a{
     height: max-content;
     margin-top: 5px;
     padding: 5px 15px;
-    border: 2px;
+    border: transparent;
     border-radius: 4px;
 }
 
 button:hover{
     width: min-content;
     height: min-content;
-    background-color: rgb(29, 98, 202);
-    border: 2px solid rgb(13, 25, 36);
-    color:aliceblue;
+    background-color: #032338;
+    border:transparent;
+    color: #fff;
 }
 
 footer{
@@ -460,3 +469,67 @@ footer{
     margin: 15px 40%;
     text-transform: capitalize;
 }
+
+
+/* Boton container */
+
+/* .boton-arriba-caja{
+    position: fixed;
+    bottom: 3rem;
+    right: 0rem;
+    width: 5.6rem;
+    height: 14.6rem;
+    z-index: -1;
+}
+
+.boton-arriba{
+    width: 0rem;
+    height: 0rem;
+    cursor: pointer;
+    transition: -2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    z-index: -1;
+}
+
+.icon-flecha{
+    position: relative;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50% -50%) scale(0);
+    transition: -2s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .boton-arriba-caja{
+    animation: popop .3s ease-in-out;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 11;
+}
+
+.show i{
+    transform: translate(-50% -50%) scale(1);
+}
+
+@keyframes popop {
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+
+    50%{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    100%{
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+} */

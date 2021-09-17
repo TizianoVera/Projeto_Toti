@@ -184,31 +184,31 @@
             </div>
 
             <div name="comunicacion" class="caixaform">
-                <form action="#" id="form" method="POST" >
+                <form action="https://formspree.io/f/myyloywn" name="form" id="form" method="POST" >
 
                     <div class="formControl" >
-                        <label for="nome">Nome:
-                            <input type="text" id="nome" name="nome" placeholder=" Preencha seu nome"required>
+                        <label for="nome" id="nome" name="nome">Nome:
+                            <input type="text" id="nome" name="nome" placeholder=" Preencha seu nome" required>
                         </label>
-                        <span id="error" id="active"></span>
+                        <span id="verified"></span>
                      </div>
 
                     <div class="formControl" >
-                        <label for="telefone" id="telefone">Telefone:
+                        <label for="telefone" id="telefone" name="telefone">Telefone:
                             <input type="tel" id="Telefone" name="Telefone" placeholder=" xx-xxxxx-xxxx" required>
                         </label>
-                        <span id="error" id="active"></span>
+                        <span id="verified"></span>
                     </div>
 
                     <div class="formControl">
-                        <label for="email" id="email">Email:
+                        <label for="email" id="email" name="email">Email:
                             <input type="email" id="email" name="email" placeholder=" xxxxxxx@xxx.xxx" required>
                         </label>
-                        <span id="error" id="active"></span>
+                        
                     </div>
-                
+                    <span id="active"></span>
                     <span class="formControl" for="asunto" id="asunto">
-                        <label for="mensaje">Asunto:
+                        <label for="mensaje" name="Asunto">Asunto:
                             <textarea id="mensaje" rows="10" cols="70" name="comentario"></textarea>
                         </label>
                     </span>
@@ -217,9 +217,17 @@
             </div>
             
         </section>
+        <!-- <div class="boton-arriba-caja">
+            <div class="boton-arriba">
+                <i class="icon-flecha"><img src="https://img.icons8.com/material-rounded/48/000000/double-up.png"/></i>
+            </div>
+        </div> -->
     </main>
+
 </body>
-<!-- <script src="validacion.js"></script> -->
+<!-- <script src="./js/validacion.js"></script> -->
+<script src="/js/envioFormulario.js"></script>
+<!-- <script src="/js/eventos.js"></script> -->
 <footer>
     <p>&copy; direitos reservados pelo <img src="./img/generatedtext.png" alt="tizianovera" width="250" height="100">
     </p>
